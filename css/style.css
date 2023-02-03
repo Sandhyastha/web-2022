@@ -1,28 +1,99 @@
-body{
+body {
     margin: 0;
     padding: 0;
 }
 
-.container{
+/* .container{
     height: 100vh;
     width: 100%;
     background-image: url(/bg.jpg);
-    background-position: center;
+    background-position:center ;
     background-size: cover;
     padding-left: 5%;
     padding-right: 5%;
     box-sizing: border-box;
+    opacity: 80%;
+} */
+
+.container .image {
+    height: 80vh;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+
+
+
 }
+
+.container .image img {
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+}
+
 .navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(232, 180, 117);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    margin: 10px auto;
+
+}
+
+.navbar ul {
+    width: 100%;
+    display: flex;
+    margin-left: 40%;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin: 0 30px;
+    padding: 15px 0;
+
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: rgb(19, 2, 2);
+}
+
+.navbar a:hover {
+    color: rgb(107, 164, 27);
+    border-bottom: 2px solid red;
+
+}
+
+.icons {
+    font-size: 2 rem ;
+    margin-left: 1 rem;
+    color: black;
+    cursor: pointer;
+    display: inline;
+}
+
+.icons div:hover{
+    background-color: black;
+    color: #fff;
+    border-radius: 10px;
+    padding: 1rem 3 rem  ;
+}
+
+/* .navbar {
     width: 100%;
     height: 15vh;
     margin: auto;
     display: flex;
     align-items: center;
+    position: absolute;
+   
 
-}
- 
-nav{
+} */
+
+/* nav{
     flex: 1;
     padding: 65px;
 }
@@ -34,40 +105,50 @@ nav ul li{
 
  nav ul li a{
     text-decoration: none;
-    color: rgb(200, 244, 249);
- }
+    color: rgb(234, 15, 15);
+ } */
+.content {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
 
- .content h1{
+.content h1 {
     font-size: 60px;
     font-weight: 100;
     margin-top: 24px;
     margin-bottom: 15px;
-    color: aqua;
- }
+    color: rgb(101, 5, 5);
+}
 
- .content p{
+.content p {
     font-size: 20px;
-    /* font-weight: 100;
-    margin-top: 24px;
-    margin-bottom: 15px; */
-    color: aquamarine;
- }
-   .content{
-    margin-left: 10%;
-    margin-top: 10%;
-   }
 
-.content .btn{
+    color: rgb(5, 73, 50);
+}
+
+.content .btn {
     display: inline-block;
-    background: linear-gradient(45deg, yellow,green);
+    background: linear-gradient(45deg, yellow, green);
     border-radius: 6px;
-    padding: 10px 20px ;
+    padding: 10px 20px;
     box-sizing: border-box;
     text-decoration: none;
     color: #fff;
     box-shadow: 3px 8px 22px rgb(200, 244, 249);
 
 }
+/* 2 */
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20%;
+}
+.box-1{
+    height: 400px;
+    width: 30%;
+    border: 1px solid black;
+    background-color: white;
 
-
-
+}
