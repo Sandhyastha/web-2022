@@ -73,6 +73,8 @@ body {
     color: black;
     cursor: pointer;
     display: inline;
+    flex-direction: column;
+
 }
 
 .icons div:hover{
@@ -152,3 +154,7 @@ nav ul li{
     background-color: white;
 
 }
+
+
+
+
